@@ -1,6 +1,6 @@
 Project Overview:
 
-This is a week-long project in which I will use React and APIs to import information about horned animals.
+This is a week-long project in which I will use React and APIs to import document about horned animals.
 
 <!-- Your Role:
 
