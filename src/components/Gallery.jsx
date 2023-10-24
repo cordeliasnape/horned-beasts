@@ -1,18 +1,19 @@
 import HornedBeast from "./HornedBeast";
+import beastArr from "../Data";
 
 export default function Gallery() {
   return (
-    <div>
-      <HornedBeast
-        title="Rhino"
-        imgUrl="./src/img/rhino.jpeg"
-        description="This is a rhino!"
-      />
-      <HornedBeast
-        title="Elephant"
-        imgUrl="./src/img/elephant.jpeg"
-        description="This is an elephant!"
-      />
+    <div className="animals">
+      {beastArr.map((beast) => {
+        return (
+          <HornedBeast
+            id={beast._id}
+            img={beast.image_url}
+            description={beast.description}
+            title={beast.title}
+          />
+        );
+      })}
     </div>
   );
 }
