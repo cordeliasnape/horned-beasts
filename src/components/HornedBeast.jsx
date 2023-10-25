@@ -1,8 +1,12 @@
 import { useState } from "react";
 
-export default function HornedBeast({ title, img, description }) {
+export default function HornedBeast({
+  title,
+  img,
+  description,
+  handleShowModal,
+}) {
   const [likes, setLikes] = useState(0);
-
   function handleLikes() {
     setLikes(likes + 1);
   }
@@ -12,6 +16,7 @@ export default function HornedBeast({ title, img, description }) {
       <img src={img} alt={title} onClick={handleLikes} />
       <p>{description}</p>
       <p>Favourites: {likes} ❤️</p>
+      <button onClick={handleShowModal}>Show/Hide Information</button>
     </div>
   );
 }
