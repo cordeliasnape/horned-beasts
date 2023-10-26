@@ -13,10 +13,12 @@ export default function HornedBeast({
   return (
     <div className="animal">
       <h2>{title}</h2>
-      <img src={img} alt={title} onClick={handleLikes} />
+      <img src={img} />
       <p>{description}</p>
-      <p>Favourites: {likes} ❤️</p>
-      <button onClick={handleShowModal}>Show/Hide Information</button>
+      <p onClick={handleLikes}>Favourites: {likes} ❤️</p>
+      <button onClick={() => handleShowModal({ title, img })}>
+        Show/Hide Information
+      </button>
     </div>
   );
 }

@@ -80,12 +80,6 @@ main {
   justify-content: center;
 }
 
-.modal p {
-  font-size: 30px;
-  background-color: #322e18;
-  padding: 20px;
-}
-
 .modal h2 {
   font-size: 40px;
   background-color: #322e18;
