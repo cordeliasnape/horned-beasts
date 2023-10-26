@@ -10,6 +10,7 @@ export default function Gallery({ beastArr, handleShowModal }) {
             img={beast.image_url}
             description={beast.description}
             title={beast.title}
+            horns={beast.horns}
             handleShowModal={() => handleShowModal(beast)}
           />
         );

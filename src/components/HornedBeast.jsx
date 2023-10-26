@@ -4,6 +4,7 @@ export default function HornedBeast({
   title,
   img,
   description,
+  horns,
   handleShowModal,
 }) {
   const [likes, setLikes] = useState(0);
@@ -14,10 +15,11 @@ export default function HornedBeast({
     <div className="animal">
       <h2>{title}</h2>
       <img src={img} />
-      <p>{description}</p>
+      <p>"{description}"</p>
+      <p>Horns: {horns}</p>
       <p onClick={handleLikes}>Favourites: {likes} ❤️</p>
       <button onClick={() => handleShowModal({ title, img })}>
-        Show/Hide Information
+        Show Information
       </button>
     </div>
   );
